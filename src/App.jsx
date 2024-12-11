@@ -12,9 +12,6 @@ function App() {
         <Routes>
           <Route path="/" element={<ConnectWallet />} />
           <Route path="/test" element={<Testpage />} />
-          {/* <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
         </Routes>
       </div>
     </Router>

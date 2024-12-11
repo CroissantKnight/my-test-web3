@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import { Connection, PublicKey, clusterApiUrl, Keypair, SystemProgram, Transaction } from "@solana/web3.js";
+import { Navigate, useNavigate } from "react-router-dom";
+
 // import './ConnectWallet.css';
 
 function ConnectWallet() {
   const connection = new Connection(clusterApiUrl("devnet"), "confirmed");
+  const navigate = useNavigate();
 
   const [publicKey, setPublicKey] = useState(null);
   const [walletBalance, setWalletBalance] = useState(null);
   const [isWalletConnected, setIsWalletConnected] = useState(false);
+
+  const handleClick_back = (path, index) => {
+    navigate("/test");
+  };
+
 
   // เชื่อมต่อกับ Phantom Wallet
   const handleConnectWallet = async () => {
@@ -85,7 +93,10 @@ function ConnectWallet() {
             SOL
           </p>
           <button onClick={handleDisconnectWallet}>Disconect your wallet</button>
+          <button onClick={handleClick_back}>Go to page test</button>
+
         </div>
+        
       )}
     </>
   );
