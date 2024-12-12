@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // >import component file
-import Testpage from "./components/PageForTest";
+import Testpage from "./pages/PageForTest";
 import ConnectWallet from "./components/ConnectWallet";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ConnectWallet />} />
           <Route path="/test" element={<Testpage />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </Router>
