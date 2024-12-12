@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Testpage from "./pages/PageForTest";
 import ConnectWallet from "./components/ConnectWallet";
 import Profile from "./pages/Profile";
+import Topbackground from "./components/Topbackground";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<ConnectWallet />} />
           <Route path="/test" element={<Testpage />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/Top" element={<Topbackground />} />
         </Routes>
       </div>
     </Router>
