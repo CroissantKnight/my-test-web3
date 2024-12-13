@@ -1,41 +1,48 @@
 .status {
-    background-color: #ffffff;
-    padding: 0vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    height: 300px;
-    /* max-width: 1000px; */
-    /* width: calc(100% - 40vw);   */
-    width: vw;
-    text-align: center;  
-  }
-  .rounded-full {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-fit: cover;
-    position: relative;
-    top: 5px;
-    left:px;
-    z-index: 1;
-  }
-  .div-rounded-img {
-    position: relative; /* ทำให้ div เป็นตัวอ้างอิง */
-    width: 200px;
-    height: 100px;
-    background-color: rgb(255, 255, 255); /* ตัวอย่างสีพื้นหลัง */
-    overflow: visible;
-  }
-  .white-rounded-img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-fit: cover;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    top: -50px; /* ขยับขึ้นจาก div */
-    left: 50px; /* เลื่อนให้เหมาะสม */
-    z-index: 1; /* ทำให้ภาพอยู่ด้านหน้า */
-  }
+  background-color: #58ff0b;
+  padding: 0vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height: 300px;
+  /* max-width: 1000px; */
+  /* width: calc(100% - 40vw);   */
+  width: vw;
+  text-align: center;
+  overflow: visible;
+}
+.div-rounded-img {
+  position: relative; /* ทำให้ div เป็นตัวอ้างอิง */
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 33, 33); /* ตัวอย่างสีพื้นหลัง */
+  float:left;
+}
+.rounded-full {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: 5px;
+  left: 0px;
+  z-index: 1;
+}
+.white-rounded-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: -50px; /* ขยับขึ้นจาก div */
+  left: 0px; /* เลื่อนให้เหมาะสม */
+  z-index: 1; /* ทำให้ภาพอยู่ด้านหน้า */
+  float:left;
+}
+.profile-content {
+  background-color: rgb(165, 165, 165);
+  float:left;
+  height: 100%;
+  margin-left: 70px;
+  
+}

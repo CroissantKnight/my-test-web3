@@ -1,5 +1,6 @@
 import React from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import Profile from "../pages/Profile"; 
 
 function Testpage() {
   const navigate = useNavigate();
@@ -11,6 +12,7 @@ function Testpage() {
   };
   return (
     <div>
+      <Profile/>
       <h1>trytodosomething</h1>
       <button onClick={handleOUCH}>Click me</button>
       <br/>
