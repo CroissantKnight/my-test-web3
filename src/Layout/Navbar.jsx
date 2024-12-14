@@ -23,6 +23,9 @@ const Navbar = () => {
       <div className="auth-buttons">
         {isLoggedIn ? (
           <>
+            <div>
+            <button className="signout-btn" onClick={handleLogout}>Log out</button>
+            </div>
             <span className="level-badge">Lvl 1</span>
             <div className="profile-notification">
               <span className="notification">0</span>
