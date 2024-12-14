@@ -5,6 +5,8 @@ import Testpage from "./pages/PageForTest";
 import ConnectWallet from "./components/ConnectWallet";
 import Profile from "./pages/Profile";
 import Topbackground from "./components/Topbackground";
+import Navbar from "./Layout/Navbar"; // Import Navbar
+
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/test" element={<Testpage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/Top" element={<Topbackground />} />
+          <Route path="/nav" element={<Navbar />} />
+
         </Routes>
       </div>
     </Router>
