@@ -1,0 +1,25 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* กำหนดความสูงเต็มหน้าจอ */
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    flex: 1; /* ส่วนนี้จะขยายตัวตามเนื้อหาที่เหลือ */
+    overflow-y: auto; /* ทำให้ main scrollable */
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }

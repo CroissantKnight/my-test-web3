@@ -5,6 +5,7 @@ import Testpage from "./pages/PageForTest";
 import ConnectWallet from "./components/ConnectWallet";
 import Profile from "./pages/Profile";
 import Topbackground from "./components/Topbackground";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -12,10 +13,13 @@ function App() {
       <div>
         {/* <h1>My React App</h1> */}
         <Routes>
-          <Route path="/" element={<ConnectWallet />} />
-          <Route path="/test" element={<Testpage />} />
+          <Route path="/phantom" element={<ConnectWallet />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/Top" element={<Topbackground />} />
+
+          <Route path="/" element={<Layout />}>
+            <Route path="/test" element={<Testpage />} />
+          </Route>
         </Routes>
       </div>
     </Router>
