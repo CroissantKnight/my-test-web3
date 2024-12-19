@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 
 branch start here create your own branch
 pang created own branch
+12/19/2024:create .env.local to store URL & anon of supabase
