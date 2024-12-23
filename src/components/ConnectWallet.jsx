@@ -16,7 +16,6 @@ function ConnectWallet() {
     navigate("/test");
   };
 
-
   // เชื่อมต่อกับ Phantom Wallet
   const handleConnectWallet = async () => {
     if ("solana" in window) {

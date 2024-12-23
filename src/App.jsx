@@ -9,8 +9,8 @@ import Layout from "./components/Layout";
 import Supabase from "./Supabase";
 import Auth from "./Auth";
 import Account from "./Account";
-import Getdata from "./Fetchdata";
-import Adddata from "./pages/profile/Insert.jsx";
+import Getdata from "./pages/supabase/Fetchdata.js";
+import Adddata from "./pages/supabase/Insert.jsx";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path="/phantom" element={<ConnectWallet />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/Top" element={<Topbackground />} />
-          
+
           <Route path="/Supabase" element={<Supabase />} />
           <Route path="/Auth" element={<Auth />} />
           <Route path="/Account" element={<Account />} />
