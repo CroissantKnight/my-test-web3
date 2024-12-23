@@ -1,7 +1,22 @@
 import React, { useState } from "react";
-import { handle_getdata } from "./Action.jsx"
+import { supabase } from "../../supabaseClient";
 
 export default function Getdata() {
+  const handle_getdata = async (event) => {
+    event.preventDefault();
+    try {
+      let { data, error } = await supabase.from("email").select("*");
+      if (error) {
+        console.log("Error:", error.message);
+      } else {
+        console.log("Fetched Data:", data);
+        console.log("Fetched Data:", typeof data);
+      }
+    } catch (error) {
+      console.log("Error : ", error.message);
+    }
+  };
+
   return (
     <div>
       {/* fetch data btn */}
