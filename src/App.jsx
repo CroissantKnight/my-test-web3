@@ -9,7 +9,7 @@ import Layout from "./components/Layout";
 import Supabase from "./Supabase";
 import Auth from "./Auth";
 import Account from "./Account";
-import Getdata from "./pages/supabase/Fetchdata.js";
+import Getdata from "./pages/supabase/Fetchdata.jsx";
 import Adddata from "./pages/supabase/Insert.jsx";
 
 function App() {
