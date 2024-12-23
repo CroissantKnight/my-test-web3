@@ -1,39 +1,7 @@
 import React, { useState } from "react";
-import { supabase } from "../../supabaseClient";
+import { handle_adddata } from "./Action";
 
 export default function Adddata() {
-  const [fullname_input, setfullname_input] = useState("");
-  const [email_input, setemail_input] = useState("");
-  const [tel_input, settel_input] = useState("");
-
-  // = ฟังก์ชันเพิ่มข้อมูล (insert)
-  // = from('email').insert([{ fullname: '', email: '', tel:'' },]).select()
-  const handle_adddata = async (event) => {
-    event.preventDefault();
-    try {
-      let { data, error } = await supabase
-        .from("email")
-        .insert([
-          { fullname: fullname_input, email: email_input, tel: tel_input },
-        ])
-        .select();
-      if (error) {
-        console.log("Error:", error.message);
-      } else {
-        console.log("Data added :", data);
-        console.log("Fetched Data:", typeof data);
-      }
-    } catch (error) {
-      console.log("Error : ", error.message);
-    }
-  };
-  const handle_test = async (event) => {
-    console.log(fullname_input);
-    console.log(email_input);
-    console.log(tel_input);
-    
-  }
-
   return(
     <div>
       <div>
