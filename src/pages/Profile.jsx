@@ -1,5 +1,5 @@
 import React from "react";
-import "./Profile.css";
+// import "./Profile.css";
 import Topbackground from "../components/Topbackground.jsx";
 function Profile() {
   return (
@@ -18,8 +18,7 @@ function Profile() {
           </div>
         </div>
         <div className="profile-content">
-            <h1 style={{ fontSize: "5vw" }}>Profile</h1>{" "}
-
+          <h1 style={{ fontSize: "5vw" }}>Profile</h1>{" "}
         </div>
       </div>
     </>
