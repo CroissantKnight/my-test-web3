@@ -26,10 +26,11 @@ function App() {
           <Route path="/Auth" element={<Auth />} />
           <Route path="/Account" element={<Account />} />
 
-          <Route path="/Getdata" element={<Getdata />} />
-          <Route path="/Adddata" element={<Adddata />} />
 
+          <Route path="/Getdata2" element={<Getdata />} />
           <Route path="/" element={<Layout />}>
+          <Route path="/Getdata" element={<Getdata />} />
+            <Route path="/Adddata" element={<Adddata />} />
             <Route path="/test" element={<Testpage />} />
           </Route>
         </Routes>
