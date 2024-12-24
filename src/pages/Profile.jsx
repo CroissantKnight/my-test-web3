@@ -13,7 +13,7 @@ function Profile() {
               loading="lazy"
               decoding="async"
               src="https://assets.hackquest.io/users/avatars/avatar-default-10.png"
-              class="rounded-full"
+              className="rounded-full"
             />
           </div>
         </div>

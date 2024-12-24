@@ -5,7 +5,7 @@ import Profile from "../pages/Profile";
 function Testpage() {
   const navigate = useNavigate();
   const handleClick_back = (path, index) => {
-    navigate("/");
+    navigate("phantom");
   };
   const handleOUCH = () => {
     alert("OUCH!!!");
