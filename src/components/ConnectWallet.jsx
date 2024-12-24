@@ -58,9 +58,7 @@ function ConnectWallet() {
     setPublicKey(null);
     setWalletBalance(null);
     setIsWalletConnected(false);
-    setTransactionStatus(null);
     console.log("Disconnected wallet.");
-
   };
 
   // = สร้างfunction generate เหรีญ

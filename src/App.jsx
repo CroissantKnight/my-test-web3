@@ -16,8 +16,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route path="/profile" element={<Profile />} />
             <Route path="/test" element={<Testpage />} />
+            <Route path="/phantom" element={<ConnectWallet />} /> 
           </Route>
-          <Route path="/phantom" element={<ConnectWallet />} />
           <Route path="/Top" element={<Topbackground />} />
         </Routes>
       </div>
