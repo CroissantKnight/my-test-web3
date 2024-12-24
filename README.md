@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 
 branch start here create your own branch
 pang created own branch
+next will be supabase
