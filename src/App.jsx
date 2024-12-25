@@ -5,16 +5,19 @@ import Testpage from "./pages/PageForTest";
 import ConnectWallet from "./components/ConnectWallet";
 import Profile from "./pages/Profile";
 import Topbackground from "./components/Topbackground";
+import Layout from "./Layout/Layout"; // Import Navbar
+
 
 function App() {
   return (
     <Router>
       <div>
-        {/* <h1>My React App</h1> */}
         <Routes>
-          <Route path="/" element={<ConnectWallet />} />
-          <Route path="/test" element={<Testpage />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/test" element={<Testpage />} />
+            <Route path="/phantom" element={<ConnectWallet />} /> 
+          </Route>
           <Route path="/Top" element={<Topbackground />} />
         </Routes>
       </div>
